@@ -1,0 +1,52 @@
+.fonctionnement
+{
+    @include myflex(false);
+    .container
+    {
+        width: 100%;
+    }
+}
+
+ol.fonctionnement_etape
+{
+    @include myflex(true);
+    padding: 0;
+}
+li.fonctionnement_etape
+{
+    @include myflex(false);
+    list-style: none;
+    // background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px;
+    width: 80%;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    text-align: center;
+}
+li.fonctionnement_etape::before
+{
+    content: counter(my-awesome-counter);
+    position: absolute;
+    padding: 5px;
+    top: 25px;
+    left:-10px;
+    width: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: $color-primary;
+}
+.fonctionnement_icone
+{
+    font-size: 30px;
+}
+.text
+{
+    margin-left: 10px;
+}
+.titre_fonctionnement
+{
+    margin: 2% 0px 0px 5%;
+}

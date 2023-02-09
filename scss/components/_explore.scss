@@ -1,0 +1,20 @@
+.ville
+{
+    @include myflex(false);
+    background-color: #eaeaea;
+}
+.apropos
+{
+    @include myflex(true);
+    background-color: #f7f7f7;
+    height: 250px;
+}
+.apropos_btn
+{
+    background: $linear-gradient;
+    height: 30px;
+    padding: 12px;
+    color: white;
+    @include myflex(false);
+    border-radius: 25px;
+}
