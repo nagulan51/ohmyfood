@@ -16,11 +16,11 @@ li.fonctionnement_etape
 {
     @include myflex(false);
     list-style: none;
-    // background-color: red;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    background-color: #f6f6f6;
     border-radius: 10px;
-    padding: 30px;
-    margin: 5px;
+    padding: 20px;
+    margin: 10px;
     width: 80%;
     counter-increment: my-awesome-counter;
     position: relative;
@@ -30,13 +30,22 @@ li.fonctionnement_etape::before
 {
     content: counter(my-awesome-counter);
     position: absolute;
-    padding: 5px;
+    // padding: 5px;
     top: 25px;
     left:-10px;
-    width: 10px;
-    border-radius: 10px;
+    // width: 10px;
+    // border-radius: 10px;
     color: white;
     background-color: $color-primary;
+
+
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .fonctionnement_icone
 {
