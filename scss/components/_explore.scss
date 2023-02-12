@@ -8,13 +8,21 @@
     @include myflex(true);
     background-color: #f7f7f7;
     height: 250px;
-}
-.apropos_btn
-{
-    background: $linear-gradient;
-    height: 30px;
-    padding: 12px;
-    color: white;
-    @include myflex(false);
-    border-radius: 25px;
+    text-align: center;
+
+    
+    .paragraph_apropos
+    {
+        width: 80%;   
+    }
+    .apropos_btn
+    {
+        background: $linear-gradient;
+        height: 25px;
+        // padding: 12px;
+        padding: 0.75rem 1.5rem;
+        color: white;
+        @include myflex(false);
+        border-radius: 25px;
+    }
 }
