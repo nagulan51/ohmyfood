@@ -1,8 +1,8 @@
 .restaurants {
   width: 90%;
   margin: auto;
-  .titre_restaurant {
-  }
+  // .titre_restaurant {
+  // }
 }
 .card {
   border-radius: 20px;
@@ -29,11 +29,12 @@ figcaption {
   }
   h4,
   p {
+    font-weight: 300;
     color: black;
   }
   h4 {
     font-size: 1.17em;
-    font-weight: 900;
+    font-weight: 600;
   }
 }
 figure {

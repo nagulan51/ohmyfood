@@ -161,13 +161,18 @@ li.fonctionnement_etape::before {
 }
 
 .ville_texte {
-  font-size: 20px;
+  font-size: 17px;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-weight: 500;
+  color: #353535;
 }
 
 .restaurants {
   width: 90%;
   margin: auto;
 }
+
 .card {
   border-radius: 20px;
 }
@@ -197,11 +202,12 @@ figcaption p {
 }
 figcaption h4,
 figcaption p {
+  font-weight: 300;
   color: black;
 }
 figcaption h4 {
   font-size: 1.17em;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 figure {
