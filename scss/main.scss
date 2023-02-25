@@ -1,5 +1,10 @@
-@import "./base/reset","./base/typography";
-@import "./utils/variable", "./utils/mixins","./utils/keyframes","./utils/maps";
+@import "./base/reset", "./base/typography";
 
-@import "./layouts/header","./layouts/footer";
-@import "./components/explore","./components/_fonctionnement.scss","./components/ville","./components/restaurants";
+@import "./utils/variable", "./utils/mixins", "./utils/keyframes",
+  "./utils/maps";
+
+@import "./layouts/header", "./layouts/footer";
+
+@import "./components/explore", "./components/apropos",
+  "./components/_fonctionnement.scss", "./components/ville",
+  "./components/restaurants";

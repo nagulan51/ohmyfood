@@ -67,11 +67,15 @@ figure {
   }
 }
 
-.new {
+.new[data-active="true"] {
   position: absolute;
   right: 0.75rem;
   top: 15px;
   background-color: #99e2d0;
   padding: 5px;
   border-radius: 5px;
+}
+
+.new[data-active="false"] {
+  display: none;
 }

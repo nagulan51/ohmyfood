@@ -96,6 +96,10 @@ body, html {
   border-radius: 25px;
 }
 
+.titre_apropos {
+  margin: 0;
+}
+
 .fonctionnement {
   display: flex;
   align-items: center;
@@ -116,7 +120,7 @@ ol.fonctionnement_etape {
 li.fonctionnement_etape {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   background-color: #f6f6f6;
@@ -132,7 +136,7 @@ li.fonctionnement_etape {
 li.fonctionnement_etape::before {
   content: counter(my-awesome-counter);
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: -10px;
   color: white;
   background-color: #9356DC;
@@ -146,14 +150,22 @@ li.fonctionnement_etape::before {
 
 .fonctionnement_icone {
   font-size: 30px;
+  color: #7e7e7e;
 }
 
 .text {
   margin-left: 10px;
+  width: 200px;
+  text-align: left;
+  font-weight: 500;
 }
 
 .titre_fonctionnement {
   margin: 2% 0px 0px 5%;
+}
+
+i.fonctionnement_icone {
+  font-size: 20px;
 }
 
 .ville {
@@ -233,13 +245,17 @@ figure {
   font-weight: bold;
 }
 
-.new {
+.new[data-active=true] {
   position: absolute;
   right: 0.75rem;
   top: 15px;
   background-color: #99e2d0;
   padding: 5px;
   border-radius: 5px;
+}
+
+.new[data-active=false] {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
