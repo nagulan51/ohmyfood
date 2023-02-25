@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./base/reset", "./base/typography";
 
 @import "./utils/variable", "./utils/mixins", "./utils/keyframes",
@@ -8,3 +9,15 @@
 @import "./components/explore", "./components/apropos",
   "./components/_fonctionnement.scss", "./components/ville",
   "./components/restaurants";
+=======
+@import "./base/reset", "./base/typography";
+
+@import "./utils/variable", "./utils/mixins", "./utils/keyframes",
+  "./utils/maps";
+
+@import "./layouts/header", "./layouts/footer";
+
+@import "./components/explore", "./components/apropos",
+  "./components/_fonctionnement.scss", "./components/ville",
+  "./components/restaurants";
+>>>>>>> 7c10278 (correction)
