@@ -21,6 +21,7 @@ body, html {
   justify-content: center;
   max-height: 50px;
   margin-top: 10px;
+  padding: 0.5rem 0.5rem;
 }
 
 .footer {
@@ -256,6 +257,129 @@ figure {
 
 .new[data-active=false] {
   display: none;
+}
+
+.fond_restaurant > img {
+  width: 100%;
+  height: 100%;
+  max-height: 32rem;
+  object-fit: cover;
+}
+
+header.cartemenu {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  position: relative;
+}
+main .cartemenu {
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+  z-index: 1;
+  padding: 5px;
+  margin-top: -4rem;
+  position: relative;
+}
+main .nom_plat {
+  font-family: "Shrikhand", "cursive";
+}
+main .titre_entrees {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  position: relative;
+}
+main .titre_entrees::after {
+  content: " ";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main .entrees {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  margin: 10px;
+}
+main .entrees_section {
+  padding: 10px;
+}
+main .title_wrapper {
+  border-radius: 10px 0px 0px 10px;
+  padding: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-basis: 70%;
+  width: 100%;
+}
+main .title_wrapper h4, main .title_wrapper p {
+  margin: 0;
+  padding: 0;
+}
+main .price_wrapper {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: yellow;
+}
+main .confirmation_wrapper {
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  height: 78px;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0px;
+  transition: flex-basis 1000ms;
+}
+main h4, main p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.icone_wrapper {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 1s;
+  color: #99E2D0;
+}
+
+.entrees:hover .price_wrapper {
+  flex-basis: 15%;
+}
+.entrees:hover .confirmation_wrapper {
+  visibility: visible;
+  flex-basis: 15%;
+  background-color: #99E2D0;
+  margin: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+.entrees:hover .icone_wrapper {
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=style.css.map */
