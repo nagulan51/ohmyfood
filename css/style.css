@@ -318,21 +318,21 @@ figure {
   display: none;
 }
 
-.alafrancaise {
+.menu_a_la_carte {
   overflow-x: hidden;
 }
-.alafrancaise * {
+.menu_a_la_carte * {
   margin: 0;
   padding: 0;
 }
-.alafrancaise header {
+.menu_a_la_carte header {
   width: 100vw;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.alafrancaise header .icon {
+.menu_a_la_carte header .icon {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -341,14 +341,14 @@ figure {
   justify-content: center;
   align-items: center;
 }
-.alafrancaise main {
+.menu_a_la_carte main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: auto;
 }
-.alafrancaise main .container-image-dish {
+.menu_a_la_carte main .container-image-dish {
   width: 100vw;
   display: flex;
   background: #f7f7f7;
@@ -356,24 +356,26 @@ figure {
   justify-content: center;
 }
 @media (min-width: 922px) {
-  .alafrancaise main .container-image-dish {
-    width: 50vw;
+  .menu_a_la_carte main .container-image-dish {
+    width: 100vw;
   }
 }
-.alafrancaise main .container-image-dish img {
+.menu_a_la_carte main .container-image-dish img {
   width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
 }
-.alafrancaise main .menu-container {
+.menu_a_la_carte main .menu-container {
   width: 100vw;
   background: #f7f7f7;
   height: auto;
 }
 @media (min-width: 922px) {
-  .alafrancaise main .menu-container {
+  .menu_a_la_carte main .menu-container {
     width: 90vw;
   }
 }
-.alafrancaise main .menu-container .menu-header {
+.menu_a_la_carte main .menu-container .menu-header {
   width: 100%;
   background: #f7f7f7;
   display: flex;
@@ -382,7 +384,7 @@ figure {
   transform: translateY(-50px);
   align-items: center;
 }
-.alafrancaise main .menu-container .menu-header .header-title {
+.menu_a_la_carte main .menu-container .menu-header .header-title {
   width: 90%;
   height: 100px;
   padding-left: 20px;
@@ -392,17 +394,17 @@ figure {
   justify-content: start;
   align-items: center;
 }
-.alafrancaise main .menu-container .menu-header .icon {
+.menu_a_la_carte main .menu-container .menu-header .icon {
   width: 20%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.alafrancaise main .menu-container .menu-header .icon i {
+.menu_a_la_carte main .menu-container .menu-header .icon i {
   font-size: 1.8rem;
 }
-.alafrancaise main .menu-container .dish-list-container {
+.menu_a_la_carte main .menu-container .dish-list-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -411,34 +413,34 @@ figure {
   gap: 3rem;
 }
 @media (min-width: 922px) {
-  .alafrancaise main .menu-container .dish-list-container {
+  .menu_a_la_carte main .menu-container .dish-list-container {
     flex-direction: row;
     gap: 1rem;
     width: auto;
   }
 }
-.alafrancaise main .menu-container .dish-list-container .dish {
+.menu_a_la_carte main .menu-container .dish-list-container .dish {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-type {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type {
   width: 100%;
   height: 25px;
   margin-left: 20px;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-type h4 {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type h4 {
   font-weight: 400;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-type .bar {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type .bar {
   display: block;
   width: 40px;
   height: 2px;
   background: #99e2d0;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list {
   width: 95%;
   margin-top: 10px;
   display: flex;
@@ -447,7 +449,7 @@ figure {
   flex-direction: column;
   gap: 20px;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card {
   cursor: pointer;
   width: 100%;
   height: 80px;
@@ -457,26 +459,26 @@ figure {
   box-shadow: 7px 24px 29px -3px rgba(0, 0, 0, 0.1);
   animation: card-animation;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content {
   flex-direction: column;
   flex: 1;
   width: 100px;
   padding-top: 10px;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content h3 {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content h3 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-left: 10px;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content p {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content p {
   margin-left: 10px;
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .prise {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .prise {
   height: 100%;
   display: flex;
   justify-content: end;
@@ -485,7 +487,7 @@ figure {
   padding-right: 10px;
   font-weight: 600;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,15 +499,15 @@ figure {
   border-radius: 0 10px 10px 0;
   transition: opacity 500ms, width 500ms, margin-left 500ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox .icon {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox .icon {
   color: #fff;
   transform: rotate(90deg);
   transition: transform 500ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .prise {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .prise {
   margin-right: 10px;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox {
   transition: opacity 500ms, width 500ms, transform 500ms;
   opacity: 1;
   width: 100px;
@@ -513,42 +515,42 @@ figure {
   background: #99e2d0;
   border-radius: 0 10px 10px 0;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox .icon {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox .icon {
   color: #fff;
   transform: rotate(360deg);
   transition: transform 500ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(1) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(1) {
   animation-duration: 550ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(2) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(2) {
   animation-duration: 600ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(3) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(3) {
   animation-duration: 650ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(4) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(4) {
   animation-duration: 700ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(5) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(5) {
   animation-duration: 750ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(6) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(6) {
   animation-duration: 800ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(7) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(7) {
   animation-duration: 850ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(8) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(8) {
   animation-duration: 900ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(9) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(9) {
   animation-duration: 950ms;
 }
-.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(10) {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(10) {
   animation-duration: 1000ms;
 }
-.alafrancaise main .order-container {
+.menu_a_la_carte main .order-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -557,7 +559,7 @@ figure {
   align-items: center;
   justify-content: center;
 }
-.alafrancaise main .order-container button {
+.menu_a_la_carte main .order-container button {
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   box-shadow: 7px 24px 29px -3px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -570,20 +572,20 @@ figure {
   color: #fff;
   cursor: pointer;
 }
-.alafrancaise footer {
+.menu_a_la_carte footer {
   width: 100vw;
   height: auto;
   background: #353535;
   display: block;
 }
-.alafrancaise footer .logo {
+.menu_a_la_carte footer .logo {
   width: 100vw;
   padding: 20px;
 }
-.alafrancaise footer .logo img {
+.menu_a_la_carte footer .logo img {
   width: 110px;
 }
-.alafrancaise footer .fooder-list {
+.menu_a_la_carte footer .fooder-list {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -594,7 +596,7 @@ figure {
   flex-direction: column;
   color: #fff;
 }
-.alafrancaise footer .fooder-list a {
+.menu_a_la_carte footer .fooder-list a {
   color: #fff;
 }
 

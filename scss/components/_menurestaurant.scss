@@ -1,4 +1,4 @@
-.alafrancaise {
+.menu_a_la_carte {
   overflow-x: hidden;
   * {
     margin: 0;
@@ -30,7 +30,7 @@
     .container-image-dish {
       width: 100vw;
       @include media(pc) {
-        width: 50vw;
+        width: 100vw;
       }
       display: flex;
       background: #f7f7f7;
@@ -38,6 +38,8 @@
       justify-content: center;
       img {
         width: 100%;
+        max-height: 32rem;
+        object-fit: cover;
       }
     }
     .menu-container {
