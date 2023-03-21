@@ -1,0 +1,2 @@
+npm i scss
+npx sass ./scss/main.scss ./css/style.css --watch

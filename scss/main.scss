@@ -1,10 +1,11 @@
 @import "./base/reset", "./base/typography";
 
 @import "./utils/variable", "./utils/mixins", "./utils/keyframes",
-  "./utils/maps";
+  "./utils/maps", "./utils/_responsive";
 
 @import "./layouts/header", "./layouts/footer";
 
 @import "./components/explore", "./components/apropos",
   "./components/_fonctionnement.scss", "./components/ville",
-  "./components/restaurants","./components/menurestaurant";
+  "./components/restaurants", "./components/menurestaurant",
+  "./components/loader.scss";

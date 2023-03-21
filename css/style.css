@@ -117,6 +117,18 @@ ol.fonctionnement_etape {
   flex-direction: column;
   padding: 0;
 }
+@media (min-width: 922px) {
+  ol.fonctionnement_etape {
+    padding: 10px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  ol.fonctionnement_etape {
+    padding: 10px;
+    flex-direction: row;
+  }
+}
 
 li.fonctionnement_etape {
   display: flex;
@@ -185,9 +197,56 @@ i.fonctionnement_icone {
   width: 90%;
   margin: auto;
 }
+@media (min-width: 922px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 922px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+}
 
 .card {
   border-radius: 20px;
+}
+@media (min-width: 922px) {
+  .card {
+    width: 46%;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    width: 46%;
+  }
 }
 
 figure img {
@@ -259,131 +318,351 @@ figure {
   display: none;
 }
 
-.fond_restaurant > img {
-  width: 100%;
-  height: 100%;
-  max-height: 32rem;
-  object-fit: cover;
+.alafrancaise {
+  overflow-x: hidden;
 }
-
-header.cartemenu {
-  border-radius: 5px;
-  margin-top: 20px;
-  padding: 0px 10px 0px 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-main {
-  position: relative;
-}
-main .cartemenu {
-  border-radius: 10px 10px 0px 0px;
-  background-color: white;
-  z-index: 1;
-  padding: 5px;
-  margin-top: -4rem;
-  position: relative;
-}
-main .nom_plat {
-  font-family: "Shrikhand", "cursive";
-}
-main .titre_entrees {
-  text-transform: uppercase;
-  padding-bottom: 0.5rem;
-  font-weight: normal;
-  position: relative;
-}
-main .titre_entrees::after {
-  content: " ";
-  width: 3rem;
-  height: 0.25rem;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-main .entrees {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border-radius: 10px;
-  margin: 10px;
-}
-main .entrees_section {
-  padding: 10px;
-}
-main .title_wrapper {
-  border-radius: 10px 0px 0px 10px;
-  padding: 20px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex-basis: 70%;
-  width: 100%;
-}
-main .title_wrapper h4,
-main .title_wrapper p {
+.alafrancaise * {
   margin: 0;
   padding: 0;
 }
-main .price_wrapper {
-  flex-basis: 30%;
+.alafrancaise header {
+  width: 100vw;
+  height: 70px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  background-color: yellow;
 }
-main .confirmation_wrapper {
-  flex-basis: 10%;
-  background-color: #99e2d0;
+.alafrancaise header .icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alafrancaise main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
-  height: 79px;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0px;
-  transition: flex-basis 1000ms;
+  flex-direction: column;
+  height: auto;
 }
-main h4,
-main p {
-  margin: 0;
+.alafrancaise main .container-image-dish {
+  width: 100vw;
+  display: flex;
+  background: #f7f7f7;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 922px) {
+  .alafrancaise main .container-image-dish {
+    width: 50vw;
+  }
+}
+.alafrancaise main .container-image-dish img {
+  width: 100%;
+}
+.alafrancaise main .menu-container {
+  width: 100vw;
+  background: #f7f7f7;
+  height: auto;
+}
+@media (min-width: 922px) {
+  .alafrancaise main .menu-container {
+    width: 90vw;
+  }
+}
+.alafrancaise main .menu-container .menu-header {
+  width: 100%;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  transform: translateY(-50px);
+  align-items: center;
+}
+.alafrancaise main .menu-container .menu-header .header-title {
+  width: 90%;
+  height: 100px;
+  padding-left: 20px;
+  font-size: 1.9rem;
+  font-family: Shrikhand, Roboto, sans-serif;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.alafrancaise main .menu-container .menu-header .icon {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alafrancaise main .menu-container .menu-header .icon i {
+  font-size: 1.8rem;
+}
+.alafrancaise main .menu-container .dish-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 922px) {
+  .alafrancaise main .menu-container .dish-list-container {
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+  }
+}
+.alafrancaise main .menu-container .dish-list-container .dish {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-type {
+  width: 100%;
+  height: 25px;
+  margin-left: 20px;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-type h4 {
+  font-weight: 400;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-type .bar {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #99e2d0;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list {
+  width: 95%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card {
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 7px 24px 29px -3px rgba(0, 0, 0, 0.1);
+  animation: card-animation;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content {
+  flex-direction: column;
+  flex: 1;
+  width: 100px;
+  padding-top: 10px;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content p {
+  margin-left: 10px;
+  font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-.icone_wrapper {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: white;
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .prise {
+  height: 100%;
   display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  height: 100%;
+  background: #99e2d0;
+  border-radius: 0 10px 10px 0;
+  transition: opacity 500ms, width 500ms, margin-left 500ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card .checkbox .icon {
+  color: #fff;
+  transform: rotate(90deg);
+  transition: transform 500ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .prise {
+  margin-right: 10px;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox {
+  transition: opacity 500ms, width 500ms, transform 500ms;
+  opacity: 1;
+  width: 100px;
+  height: 100%;
+  background: #99e2d0;
+  border-radius: 0 10px 10px 0;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:hover .checkbox .icon {
+  color: #fff;
+  transform: rotate(360deg);
+  transition: transform 500ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(1) {
+  animation-duration: 550ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(2) {
+  animation-duration: 600ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(3) {
+  animation-duration: 650ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(4) {
+  animation-duration: 700ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(5) {
+  animation-duration: 750ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(6) {
+  animation-duration: 800ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(7) {
+  animation-duration: 850ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(8) {
+  animation-duration: 900ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(9) {
+  animation-duration: 950ms;
+}
+.alafrancaise main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(10) {
+  animation-duration: 1000ms;
+}
+.alafrancaise main .order-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.2s;
-  color: #99e2d0;
+}
+.alafrancaise main .order-container button {
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  box-shadow: 7px 24px 29px -3px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+}
+.alafrancaise footer {
+  width: 100vw;
+  height: auto;
+  background: #353535;
+  display: block;
+}
+.alafrancaise footer .logo {
+  width: 100vw;
+  padding: 20px;
+}
+.alafrancaise footer .logo img {
+  width: 110px;
+}
+.alafrancaise footer .fooder-list {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+  color: #fff;
+}
+.alafrancaise footer .fooder-list a {
+  color: #fff;
 }
 
-.entrees:hover .price_wrapper {
-  flex-basis: 15%;
+@keyframes card-animation {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
-.entrees:hover .confirmation_wrapper {
-  visibility: visible;
-  flex-basis: 15%;
-  flex: 100px;
-  background-color: #99e2d0;
-  margin: 0;
-  border-radius: 0px 5px 5px 0px;
+.container-loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  animation: loading;
+  animation-duration: 2s;
+  opacity: 0;
 }
-.entrees:hover .icone_wrapper {
-  transform: rotate(0);
+.container-loader .loader {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    width: 100vw;
+    height: 100vh;
+  }
+  99% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 0vw;
+    height: 0vh;
+    visibility: hidden;
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

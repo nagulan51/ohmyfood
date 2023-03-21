@@ -1,0 +1,35 @@
+$tablet-width: 768px;
+$pc :922px;
+
+@mixin tablet 
+{
+  @media (min-width: #{$tablet-width}) 
+  {
+    @content;
+  }
+}
+
+@mixin pc 
+{
+  @media (min-width: #{$pc}) {
+    @content;
+  }
+}
+
+@mixin media($keys...) 
+{
+  @each $key in $keys {
+    @if ($key == tablet) 
+    {
+      @include tablet {
+        @content
+      }
+    } 
+    @else if ($key == pc) 
+    {
+      @include pc {
+        @content
+      }
+    }
+  }
+}

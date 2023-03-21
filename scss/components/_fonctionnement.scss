@@ -8,6 +8,12 @@
 ol.fonctionnement_etape {
   @include myflex(true);
   padding: 0;
+  @include media(pc ,tablet)
+  {
+    padding: 10px;
+    flex-direction: row;
+    // background-color: red;
+  }
 }
 li.fonctionnement_etape {
   display: flex;
@@ -54,4 +60,5 @@ li.fonctionnement_etape::before {
 }
 i.fonctionnement_icone {
   font-size: 20px;
+
 }

@@ -1,11 +1,29 @@
 .restaurants {
   width: 90%;
   margin: auto;
-  // .titre_restaurant {
-  // }
+  @include media(pc, tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
+.cards {
+  @include media(pc, tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 .card {
   border-radius: 20px;
+  @include media(pc, tablet) {
+    width: 46%;
+  }
 }
 figure img {
   object-fit: cover;
