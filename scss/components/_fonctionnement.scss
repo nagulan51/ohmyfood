@@ -68,6 +68,8 @@ li.fonctionnement_etape::before {
 .titre_fonctionnement {
   // margin: 2% 0px 0px 5%;
   width: 1200px;
+  max-width: 100%;
+  padding-left: 10px;
   @include media(pc, tablet) {
   }
 }

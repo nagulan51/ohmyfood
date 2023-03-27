@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -189,6 +190,8 @@ li.fonctionnement_etape::before {
 
 .titre_fonctionnement {
   width: 1200px;
+  max-width: 100%;
+  padding-left: 10px;
 }
 i.fonctionnement_icone {
   font-size: 20px;
