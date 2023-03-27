@@ -108,6 +108,16 @@ body, html {
 }
 .fonctionnement .container {
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container_fonctionnement_etape {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ol.fonctionnement_etape {
@@ -116,28 +126,32 @@ ol.fonctionnement_etape {
   justify-content: center;
   flex-direction: column;
   padding: 0;
+  width: 100%;
 }
 @media (min-width: 922px) {
   ol.fonctionnement_etape {
     padding: 10px;
     flex-direction: row;
+    width: 1200px;
   }
 }
 @media (min-width: 768px) {
   ol.fonctionnement_etape {
     padding: 10px;
     flex-direction: row;
+    width: 1200px;
   }
 }
 
 li.fonctionnement_etape {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
   list-style: none;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   background-color: #f6f6f6;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   margin: 10px;
   width: 80%;
@@ -174,9 +188,8 @@ li.fonctionnement_etape::before {
 }
 
 .titre_fonctionnement {
-  margin: 2% 0px 0px 5%;
+  width: 1200px;
 }
-
 i.fonctionnement_icone {
   font-size: 20px;
 }
@@ -220,7 +233,7 @@ i.fonctionnement_icone {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 28px;
     margin-bottom: 50px;
   }
 }
@@ -230,7 +243,7 @@ i.fonctionnement_icone {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 28px;
     margin-bottom: 50px;
   }
 }
@@ -311,7 +324,8 @@ figure {
   top: 15px;
   background-color: #99e2d0;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
+  color: #1b6150;
 }
 
 .new[data-active=false] {
@@ -460,6 +474,8 @@ figure {
   animation: card-animation;
 }
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   flex: 1;
   width: 100px;
@@ -549,6 +565,21 @@ figure {
 }
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(10) {
   animation-duration: 1000ms;
+}
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(11) {
+  animation-duration: 1050ms;
+}
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(12) {
+  animation-duration: 1100ms;
+}
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(13) {
+  animation-duration: 1150ms;
+}
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(14) {
+  animation-duration: 1200ms;
+}
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card:nth-child(15) {
+  animation-duration: 1250ms;
 }
 .menu_a_la_carte main .order-container {
   width: 100%;

@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 28px;
     margin-bottom: 50px;
   }
 }
@@ -91,7 +91,8 @@ figure {
   top: 15px;
   background-color: #99e2d0;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
+  color: #1b6150;
 }
 
 .new[data-active="false"] {

@@ -2,27 +2,37 @@
   @include myflex(false);
   .container {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
+.container_fonctionnement_etape {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 ol.fonctionnement_etape {
   @include myflex(true);
   padding: 0;
-  @include media(pc ,tablet)
-  {
+  width: 100%;
+  @include media(pc, tablet) {
     padding: 10px;
     flex-direction: row;
-    // background-color: red;
+    width: 1200px;
   }
 }
 li.fonctionnement_etape {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
   list-style: none;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
   background-color: #f6f6f6;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   margin: 10px;
   width: 80%;
@@ -56,9 +66,11 @@ li.fonctionnement_etape::before {
   font-weight: 500;
 }
 .titre_fonctionnement {
-  margin: 2% 0px 0px 5%;
+  // margin: 2% 0px 0px 5%;
+  width: 1200px;
+  @include media(pc, tablet) {
+  }
 }
 i.fonctionnement_icone {
   font-size: 20px;
-
 }
