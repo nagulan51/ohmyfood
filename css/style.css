@@ -425,7 +425,7 @@ figure {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 3rem;
 }
@@ -448,7 +448,8 @@ figure {
   height: 25px;
   margin-left: 20px;
 }
-.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type h4 {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type h2 {
+  font-size: 1em;
   font-weight: 400;
 }
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type .bar {
@@ -490,7 +491,7 @@ figure {
   text-overflow: ellipsis;
   margin-left: 10px;
 }
-.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content p {
+.menu_a_la_carte main .menu-container .dish-list-container .dish .dish-card-list .dish-card .content h4 {
   margin-left: 10px;
   font-weight: 300;
   white-space: nowrap;
@@ -666,12 +667,12 @@ figure {
 .container-loader .loader {
   width: 60px;
   height: 60px;
-  border: 5px solid #000;
+  border: 5px solid #99e2d0;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  animation: rotation 1s infinite;
 }
 
 @keyframes rotation {
