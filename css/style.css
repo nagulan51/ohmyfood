@@ -337,10 +337,13 @@ figure {
 
 .menu_a_la_carte {
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 .menu_a_la_carte * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .menu_a_la_carte header {
   width: 100vw;
@@ -446,11 +449,12 @@ figure {
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type {
   width: 100%;
   height: 25px;
-  margin-left: 20px;
+  padding-left: 15px;
 }
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type h2 {
   font-size: 1em;
   font-weight: 400;
+  width: 50%;
 }
 .menu_a_la_carte main .menu-container .dish-list-container .dish .dish-type .bar {
   display: block;
@@ -608,22 +612,21 @@ figure {
   cursor: pointer;
 }
 .menu_a_la_carte footer {
-  width: 100vw;
+  width: 100%;
   height: auto;
   background: #353535;
   display: block;
 }
 .menu_a_la_carte footer .logo {
-  width: 100vw;
-  padding: 20px;
+  width: 100%;
 }
 .menu_a_la_carte footer .logo img {
+  margin-left: 20px;
+  margin-top: 20px;
   width: 110px;
 }
 .menu_a_la_carte footer .fooder-list {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 20px;
   display: flex;
   align-items: start;
@@ -631,7 +634,10 @@ figure {
   flex-direction: column;
   color: #fff;
 }
-.menu_a_la_carte footer .fooder-list a {
+.menu_a_la_carte footer .fooder-list div {
+  margin-left: 20px;
+}
+.menu_a_la_carte footer .fooder-list div a {
   color: #fff;
 }
 
