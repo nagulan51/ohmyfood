@@ -12,6 +12,7 @@
   background: #fff;
   animation: loading;
   animation-duration: 2s;
+  pointer-events: none;
   opacity: 0;
 
   .loader {
@@ -22,7 +23,7 @@
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;
-    animation: rotation 1s infinite;
+    animation: rotation 500ms infinite;
   }
 }
 
