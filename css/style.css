@@ -148,6 +148,20 @@ body, html {
   margin-top: 20px;
   width: 110px;
 }
+@media (min-width: 922px) {
+  .menu_a_la_carte footer .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .menu_a_la_carte footer .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .menu_a_la_carte footer .fooder-list {
   width: 100%;
   padding-bottom: 20px;
@@ -156,6 +170,16 @@ body, html {
   gap: 10px;
   flex-direction: column;
   color: #fff;
+}
+@media (min-width: 922px) {
+  .menu_a_la_carte footer .fooder-list {
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .menu_a_la_carte footer .fooder-list {
+    align-items: center;
+  }
 }
 .menu_a_la_carte footer .fooder-list div {
   margin-left: 20px;
