@@ -490,6 +490,10 @@ i.fonctionnement_icone {
   font-size: 20px;
 }
 
+li.fonctionnement_etape:hover {
+  background-color: #f5edff;
+}
+
 .ville {
   height: 50px;
 }
@@ -626,6 +630,10 @@ figure {
 
 .new[data-active=false] {
   display: none;
+}
+
+.fa-arrow-left {
+  color: black;
 }
 
 .menu_a_la_carte {
