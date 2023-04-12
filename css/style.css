@@ -54,6 +54,9 @@ body, html {
   justify-content: center;
   align-items: center;
 }
+.menu_a_la_carte header .icon:hover .fa-arrow-left:before {
+  color: #9356dc;
+}
 .menu_a_la_carte main .menu-header {
   width: 100%;
   background: #f7f7f7;
