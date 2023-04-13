@@ -54,9 +54,6 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-.menu_a_la_carte header .icon:hover .fa-arrow-left:before {
-  color: #9356dc;
-}
 .menu_a_la_carte main .menu-header {
   width: 100%;
   background: #f7f7f7;
@@ -455,6 +452,9 @@ li.fonctionnement_etape {
   counter-increment: my-awesome-counter;
   position: relative;
   text-align: center;
+}
+li.fonctionnement_etape:hover .fa-mobile-alt:before, li.fonctionnement_etape:hover .fa-list-dots:before, li.fonctionnement_etape:hover .fa-list-ul:before, li.fonctionnement_etape:hover .fa-store:before {
+  color: #9356dc;
 }
 
 li.fonctionnement_etape::before {

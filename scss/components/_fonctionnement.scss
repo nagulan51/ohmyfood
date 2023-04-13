@@ -39,6 +39,13 @@ li.fonctionnement_etape {
   counter-increment: my-awesome-counter;
   position: relative;
   text-align: center;
+  &:hover 
+  {
+    .fa-mobile-alt:before,.fa-list-dots:before, .fa-list-ul:before,.fa-store:before
+    {
+      color:  #9356dc;
+    } 
+  }
 }
 li.fonctionnement_etape::before {
   content: counter(my-awesome-counter);
